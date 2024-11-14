@@ -1,53 +1,53 @@
 package com.plurasight;
 
 public class Order {
-    private int addSandwiches, addDrinks, addChips, checkout, cancelOrder;
+    private String addSandwiches, addDrinks, addChips, checkout, cancelOrder;
 
-    public Order(int addSandwiches, int addDrinks, int addChips, int checkout, int cancelOrder) {
-        this.addSandwiches = addSandwiches;
-        this.addDrinks = addDrinks;
-        this.addChips = addChips;
-        this.checkout = checkout;
-        this.cancelOrder = cancelOrder;
-    }
-
-    public int getAddSandwiches() {
+    public String getAddSandwiches() {
         return addSandwiches;
     }
 
-    public void setAddSandwiches(int addSandwiches) {
+    public void setAddSandwiches(String addSandwiches) {
         this.addSandwiches = addSandwiches;
     }
 
-    public int getAddDrinks() {
+    public String getAddDrinks() {
         return addDrinks;
     }
 
-    public void setAddDrinks(int addDrinks) {
+    public void setAddDrinks(String addDrinks) {
         this.addDrinks = addDrinks;
     }
 
-    public int getAddChips() {
+    public String getAddChips() {
         return addChips;
     }
 
-    public void setAddChips(int addChips) {
+    public void setAddChips(String addChips) {
         this.addChips = addChips;
     }
 
-    public int getCheckout() {
+    public String getCheckout() {
         return checkout;
     }
 
-    public void setCheckout(int checkout) {
+    public void setCheckout(String checkout) {
         this.checkout = checkout;
     }
 
-    public int getCancelOrder() {
+    public String getCancelOrder() {
         return cancelOrder;
     }
 
-    public void setCancelOrder(int cancelOrder) {
+    public void setCancelOrder(String cancelOrder) {
+        this.cancelOrder = cancelOrder;
+    }
+
+    public Order(String addSandwiches, String addDrinks, String addChips, String checkout, String cancelOrder) {
+        this.addSandwiches = addSandwiches;
+        this.addDrinks = addDrinks;
+        this.addChips = addChips;
+        this.checkout = checkout;
         this.cancelOrder = cancelOrder;
     }
 }
